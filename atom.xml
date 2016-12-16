@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-12-16T05:36:57.000Z</updated>
+  <updated>2016-12-16T06:03:11.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,18 +16,66 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>post</title>
-    <link href="http://yoursite.com/2016/12/16/post/"/>
-    <id>http://yoursite.com/2016/12/16/post/</id>
-    <published>2016-12-16T04:25:14.000Z</published>
-    <updated>2016-12-16T05:36:57.000Z</updated>
+    <title>_images</title>
+    <link href="http://yoursite.com/2016/12/16/images/"/>
+    <id>http://yoursite.com/2016/12/16/images/</id>
+    <published>2016-12-16T06:03:11.000Z</published>
+    <updated>2016-12-16T06:03:11.000Z</updated>
     
     <summary type="html">
     
     </summary>
     
+    
+  </entry>
+  
+  <entry>
+    <title>JDProgressView - How it works</title>
+    <link href="http://yoursite.com/2016/12/16/post/"/>
+    <id>http://yoursite.com/2016/12/16/post/</id>
+    <published>2016-12-16T04:25:14.000Z</published>
+    <updated>2016-12-16T07:13:58.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="JDProgressRoundView"><a href="#JDProgressRoundView" class="headerlink" title="JDProgressRoundView"></a>JDProgressRoundView</h1><h3 id="Mutiple-Display-Style-types-："><a href="#Mutiple-Display-Style-types-：" class="headerlink" title="Mutiple Display Style (types)："></a>Mutiple Display Style (types)：</h3><p><code>1  (.DownToTop)</code> <code>2   (.Loop)</code> <code>3. (.GrownCircle)</code>  </p>
+<p><img src="/images/JDProgressRoundView/DownToTop.png?raw=true" alt="Alt text" title="DownToTop"> <img src="/../master/readme_img/Loop.png?raw=true" alt="Alt text" title="DownToTop"> <img src="/../master/readme_img/GrownCircle.png?raw=true" alt="Alt text" title="DownToTop"> </p>
+<p> <code>4(.Water)</code> <code>5(.HeartBeat)</code></p>
+<p><img src="/../master/readme_img/water.gif?raw=true" alt="Alt text" title="DownToTop"> <img src="/../master/readme_img/HeartBeat.gif?raw=true" alt="Alt text" title="HeartBeat.gif"></p>
+<hr>
+<p>#Introduction</p>
+<p>JDProgressRoundView is Stylish Process Meter Based on UIProgressView.<br>It growns 5% every tap, or you can just set the progress u want.</p>
+<p>Thanks for using.</p>
+<a id="more"></a>
+<hr>
+<p>#Usage<br><figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">init</span>(frame :<span class="type">CGRect</span>)</div><div class="line">```  </div><div class="line">—&gt;  <span class="type">Default</span>: types=(.<span class="type">DownToTop</span>)  color=(red)   </div><div class="line"><span class="type">Example</span></div><div class="line">```<span class="type">Swift</span></div><div class="line"><span class="type">JD</span>:<span class="type">JDProgressRoundView</span> = <span class="type">JDProgressRoundView</span>(frame: <span class="keyword">self</span>.view.frame)</div><div class="line">```  </div><div class="line">---</div><div class="line">```<span class="type">Swift</span></div><div class="line"><span class="keyword">init</span>(frame: <span class="type">CGRect</span>,howtoincrease t:types,unit u:<span class="type">String</span>)</div></pre></td></tr></table></figure></p>
+<p>—&gt; Default: color=(red)<br>Example<br><figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="type">JD</span> = <span class="type">JDProgressRoundView</span>(frame: <span class="keyword">self</span>.view.frame, howtoincrease: .<span class="type">Loop</span>,unit: <span class="string">"%"</span>)</div></pre></td></tr></table></figure></p>
+<hr>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">init</span> (frame: <span class="type">CGRect</span>,howtoincrease t:types,<span class="type">ProgressColor</span> <span class="built_in">c</span>:<span class="type">UIColor</span>,<span class="type">BorderWidth</span> b:<span class="type">CGFloat</span>)</div></pre></td></tr></table></figure>
+<p>Example<br>```Swift<br>JD = JDProgressRoundView(frame: self.view.frame, howtoincrease: .Water,ProgressColor:UIColor.blue,BorderWidth:13.0)</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;JDProgressRoundView&quot;&gt;&lt;a href=&quot;#JDProgressRoundView&quot; class=&quot;headerlink&quot; title=&quot;JDProgressRoundView&quot;&gt;&lt;/a&gt;JDProgressRoundView&lt;/h1&gt;&lt;h3 id=&quot;Mutiple-Display-Style-types-：&quot;&gt;&lt;a href=&quot;#Mutiple-Display-Style-types-：&quot; class=&quot;headerlink&quot; title=&quot;Mutiple Display Style (types)：&quot;&gt;&lt;/a&gt;Mutiple Display Style (types)：&lt;/h3&gt;&lt;p&gt;&lt;code&gt;1  (.DownToTop)&lt;/code&gt; &lt;code&gt;2   (.Loop)&lt;/code&gt; &lt;code&gt;3. (.GrownCircle)&lt;/code&gt;  &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/JDProgressRoundView/DownToTop.png?raw=true&quot; alt=&quot;Alt text&quot; title=&quot;DownToTop&quot;&gt; &lt;img src=&quot;/../master/readme_img/Loop.png?raw=true&quot; alt=&quot;Alt text&quot; title=&quot;DownToTop&quot;&gt; &lt;img src=&quot;/../master/readme_img/GrownCircle.png?raw=true&quot; alt=&quot;Alt text&quot; title=&quot;DownToTop&quot;&gt; &lt;/p&gt;
+&lt;p&gt; &lt;code&gt;4(.Water)&lt;/code&gt; &lt;code&gt;5(.HeartBeat)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/../master/readme_img/water.gif?raw=true&quot; alt=&quot;Alt text&quot; title=&quot;DownToTop&quot;&gt; &lt;img src=&quot;/../master/readme_img/HeartBeat.gif?raw=true&quot; alt=&quot;Alt text&quot; title=&quot;HeartBeat.gif&quot;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;#Introduction&lt;/p&gt;
+&lt;p&gt;JDProgressRoundView is Stylish Process Meter Based on UIProgressView.&lt;br&gt;It growns 5% every tap, or you can just set the progress u want.&lt;/p&gt;
+&lt;p&gt;Thanks for using.&lt;/p&gt;
+    
+    </summary>
+    
       <category term="Swift" scheme="http://yoursite.com/categories/Swift/"/>
     
+    
+      <category term="Swift" scheme="http://yoursite.com/tags/Swift/"/>
+    
+      <category term="Custom Control" scheme="http://yoursite.com/tags/Custom-Control/"/>
+    
+      <category term="UIView" scheme="http://yoursite.com/tags/UIView/"/>
+    
+      <category term="UIAnimation" scheme="http://yoursite.com/tags/UIAnimation/"/>
     
   </entry>
   
