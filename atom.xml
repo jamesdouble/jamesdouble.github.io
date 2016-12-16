@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-12-16T07:47:27.000Z</updated>
+  <updated>2016-12-16T08:59:01.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,12 +20,13 @@
     <link href="http://yoursite.com/2016/12/16/JDProgressRoundView-CodeReview/"/>
     <id>http://yoursite.com/2016/12/16/JDProgressRoundView-CodeReview/</id>
     <published>2016-12-16T04:25:14.000Z</published>
-    <updated>2016-12-16T07:47:27.000Z</updated>
+    <updated>2016-12-16T08:59:01.000Z</updated>
     
     <content type="html"><![CDATA[<hr>
 <h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>JDProgressRoundView is Stylish Process Meter Based on UIProgressView.<br>It growns 5% every tap, or you can just set the progress u want.<br>Thanks for using.</p>
 <p>Source Link : <a href="https://github.com/jamesdouble/JDProgressRoundView" target="_blank" rel="external">https://github.com/jamesdouble/JDProgressRoundView</a></p>
 <a id="more"></a>
+<p>The most important technique in JDProgressRoundView.</p>
 ]]></content>
     
     <summary type="html">
