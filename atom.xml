@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-12-16T08:59:01.000Z</updated>
+  <updated>2016-12-18T09:49:19.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,17 +16,21 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>JDPorgressRoundView - How it works</title>
-    <link href="http://yoursite.com/2016/12/16/JDProgressRoundView-CodeReview/"/>
-    <id>http://yoursite.com/2016/12/16/JDProgressRoundView-CodeReview/</id>
+    <title>JDPorgressRoundView - 如何實作</title>
+    <link href="http://yoursite.com/2016/12/16/post/"/>
+    <id>http://yoursite.com/2016/12/16/post/</id>
     <published>2016-12-16T04:25:14.000Z</published>
-    <updated>2016-12-16T08:59:01.000Z</updated>
+    <updated>2016-12-18T09:49:19.000Z</updated>
     
     <content type="html"><![CDATA[<hr>
 <h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>JDProgressRoundView is Stylish Process Meter Based on UIProgressView.<br>It growns 5% every tap, or you can just set the progress u want.<br>Thanks for using.</p>
 <p>Source Link : <a href="https://github.com/jamesdouble/JDProgressRoundView" target="_blank" rel="external">https://github.com/jamesdouble/JDProgressRoundView</a></p>
 <a id="more"></a>
-<p>The most important technique in JDProgressRoundView.</p>
+<p>JDProgressRoundView 是我在16年中自制的一个IOS UI元件,<br>他的功能基本上与UIProgressView类似，用于表达一个Task的进度。<br>不同的是，它有多种表达进度的方式，有些还自带动画。</p>
+<p><img src="../../../../images/JDProgressRoundView/DownToTop.png?raw=true" alt="Alt text" title="DownToTop"> <img src="../../../../images/JDProgressRoundView/water.gif?raw=true" alt="Alt text" title="DownToTop"> </p>
+<p>本文章將介紹重點技巧 - CALayer</p>
+<p>##CALayer</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> <span class="type">VC</span> = <span class="type">UIViewController</span>()</div></pre></td></tr></table></figure>
 ]]></content>
     
     <summary type="html">

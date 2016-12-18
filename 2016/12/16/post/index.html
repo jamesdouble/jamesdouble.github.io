@@ -8,23 +8,26 @@
 
 <title>
   
-    JDPorgressRoundView - How it works
+    JDPorgressRoundView - 如何實作
   
 </title>
 
 <meta name="description" content="IntroductionJDProgressRoundView is Stylish Process Meter Based on UIProgressView.It growns 5% every tap, or you can just set the progress u want.Thanks for using.
 Source Link : https://github.com/jam">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JDPorgressRoundView - How it works">
-<meta property="og:url" content="http://yoursite.com/2016/12/16/JDProgressRoundView-CodeReview/index.html">
+<meta property="og:title" content="JDPorgressRoundView - 如何實作">
+<meta property="og:url" content="http://yoursite.com/2016/12/16/post/index.html">
 <meta property="og:site_name" content="JamesDouble">
 <meta property="og:description" content="IntroductionJDProgressRoundView is Stylish Process Meter Based on UIProgressView.It growns 5% every tap, or you can just set the progress u want.Thanks for using.
 Source Link : https://github.com/jam">
-<meta property="og:updated_time" content="2016-12-16T08:59:01.000Z">
+<meta property="og:image" content="http://yoursite.com/../../../../images/JDProgressRoundView/DownToTop.png?raw=true">
+<meta property="og:image" content="http://yoursite.com/../../../../images/JDProgressRoundView/water.gif?raw=true">
+<meta property="og:updated_time" content="2016-12-18T09:49:19.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JDPorgressRoundView - How it works">
+<meta name="twitter:title" content="JDPorgressRoundView - 如何實作">
 <meta name="twitter:description" content="IntroductionJDProgressRoundView is Stylish Process Meter Based on UIProgressView.It growns 5% every tap, or you can just set the progress u want.Thanks for using.
 Source Link : https://github.com/jam">
+<meta name="twitter:image" content="http://yoursite.com/../../../../images/JDProgressRoundView/DownToTop.png?raw=true">
 
 
   <link rel="alternative" href="/atom.xml" title="JamesDouble" type="application/atom+xml">
@@ -169,10 +172,10 @@ Source Link : https://github.com/jam">
       
         <div style="max-width: 1000px">
       
-          <article id="post-JDProgressRoundView-CodeReview" class="article article-type-post">
+          <article id="post-post" class="article article-type-post">
   
     <h1 class="article-header">
-      JDPorgressRoundView - How it works
+      JDPorgressRoundView - 如何實作
     </h1>
   
   
@@ -200,7 +203,11 @@ Source Link : https://github.com/jam">
 <h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>JDProgressRoundView is Stylish Process Meter Based on UIProgressView.<br>It growns 5% every tap, or you can just set the progress u want.<br>Thanks for using.</p>
 <p>Source Link : <a href="https://github.com/jamesdouble/JDProgressRoundView" target="_blank" rel="external">https://github.com/jamesdouble/JDProgressRoundView</a></p>
 <a id="more"></a>
-<p>The most important technique in JDProgressRoundView.</p>
+<p>JDProgressRoundView 是我在16年中自制的一个IOS UI元件,<br>他的功能基本上与UIProgressView类似，用于表达一个Task的进度。<br>不同的是，它有多种表达进度的方式，有些还自带动画。</p>
+<p><img src="../../../../images/JDProgressRoundView/DownToTop.png?raw=true" alt="Alt text" title="DownToTop"> <img src="../../../../images/JDProgressRoundView/water.gif?raw=true" alt="Alt text" title="DownToTop"> </p>
+<p>本文章將介紹重點技巧 - CALayer</p>
+<p>##CALayer</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> <span class="type">VC</span> = <span class="type">UIViewController</span>()</div></pre></td></tr></table></figure>
 
   </div>
   <footer class="article-footer">
