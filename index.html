@@ -17,15 +17,33 @@
 
  	<!-- CSS
    ================================================== -->
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
    <link rel="stylesheet" href="css/base.css">  
    <link rel="stylesheet" href="css/main.css">
    <link rel="stylesheet" href="css/vendor.css">     
-
    <!-- script
    ================================================== -->   
 	<script src="js/modernizr.js"></script>
 	<script src="js/pace.min.js"></script>
+	<script>
+	var slideIndex = 1;
+	showDivs(slideIndex);
 
+	function plusDivs(n) {	
+  		showDivs(slideIndex += n);
+	}
+
+	function showDivs(n) {
+  	var i;
+  	var x = document.getElementsByClassName("mySlides");
+  	if (n > x.length) {slideIndex = 1}    
+  	if (n < 1) {slideIndex = x.length}
+  	for (i = 0; i < x.length; i++) {
+     	x[i].style.display = "none";  
+  	}
+  	x[slideIndex-1].style.display = "block";  
+	}
+	</script>
    <!-- favicons
 	================================================== -->
 	<link rel="icon" type="image/png" href="favicon.png">
@@ -177,8 +195,8 @@
 				   	<strong>Android - Java</strong>
 				   </li>
 				   <li>
-				   	<div class="progress percent75"><span>75%</span></div>
-				   	<strong>Wordpress</strong>
+				   	<div class="progress percent50"><span>50%</span></div>
+				   	<strong>HTML,CSS</strong>
 				   </li>
       
 				</ul> <!-- /skill-bars -->		
@@ -519,23 +537,23 @@
 	                     </div>                    
 	                  </a>
 	               </div>
-	        		</div>	<!--  /folio-item -->     
-	        		<!--
+	        		</div>	 <!--  /folio-item -->     
+	        		
 	        		<div class="bgrid folio-item">
 	               <div class="item-wrap">
-	               	<img src="images/portfolio/lighthouse.jpg" alt="Lighthouse">
-	                  <a href="#modal-05" class="overlay">             		                  
+	               	<img src="images/portfolio/NchuLogo.png" alt="Lighthouse">
+	                  <a href="#modal-04" class="overlay">             		                  
 	                     <div class="folio-item-table">
 	                     	<div class="folio-item-cell">
-	                     		<h3 class="folio-title">Lighthouse</h3>	     					    
+	                     		<h3 class="folio-title">台灣中興大學</h3>	     					    
 		     					    	<span class="folio-types">
-		     					       	  Web Development
+		     					       	  證明文件01
 		     					      </span>		     		
 		     					   </div> 	                      	
 	                     </div>                    
 	                  </a>
 	               </div>
-	        		</div>  /folio-item -->
+	        		</div>  <!--/folio-item -->
 	        		<!--
 	            <div class="bgrid folio-item">
 	               <div class="item-wrap">
@@ -636,18 +654,24 @@
 				   <div id="modal-04" class="popup-modal slider mfp-hide">	
 
 				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-beetle.jpg" alt="" />
+				     		<div class="w3-content w3-display-container">
+  								<img class="mySlides" src="images/portfolio/modals/m_nchu.png" style="width:100%">
+  								<img class="mySlides" src="images/portfolio/modals/m_nchu2.png" style="width:100;display: none;%">
+  		
+  								<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  								<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+							</div>
 				     	</div>      	
 
 					   <div class="description-box">
-					      <h4>Beetle</h4>		      
-					      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+					      <h4>台灣中興大學</h4>		      
+					      <p>資訊科學與工程學系 - 畢業於 2017</p>
 
-					      <div class="categories">Branding</div>			               
+					      <div class="categories">證明文件 01</div>			               
 					   </div>
 
 			         <div class="link-box">
-			            <a href="http://www.behance.net">Details</a>
+			            <a target="_blank" href="http://www.nchu.edu.tw/index1.php">WebSite</a>
 					      <a href="#" class="popup-modal-dismiss">Close</a>
 			         </div>		      
 
