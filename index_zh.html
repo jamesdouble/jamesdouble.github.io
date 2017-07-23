@@ -18,32 +18,29 @@
  	<!-- CSS
    ================================================== -->
    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
    <link rel="stylesheet" href="css/base.css">  
    <link rel="stylesheet" href="css/main.css">
-   <link rel="stylesheet" href="css/vendor.css">     
+   <link rel="stylesheet" href="css/vendor.css">      
    <!-- script
    ================================================== -->   
 	<script src="js/modernizr.js"></script>
 	<script src="js/pace.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 	<script>
-	var slideIndex = 1;
-	showDivs(slideIndex);
+	var $j = jQuery.noConflict();
 
-	function plusDivs(n) {	
-  		showDivs(slideIndex += n);
-	}
-
-	function showDivs(n) {
-  	var i;
-  	var x = document.getElementsByClassName("mySlides");
-  	if (n > x.length) {slideIndex = 1}    
-  	if (n < 1) {slideIndex = x.length}
-  	for (i = 0; i < x.length; i++) {
-     	x[i].style.display = "none";  
-  	}
-  	x[slideIndex-1].style.display = "block";  
-	}
+	$j(document).ready(function() {
+		$j('[data-toggle="popover"]').popover({
+			html: true,
+			content: function(){return '<img src="images/qrcode.JPG" />';}
+		});
+	});
 	</script>
+	<script type="text/javascript" src="js/slider.js"></script>
+	
    <!-- favicons
 	================================================== -->
 	<link rel="icon" type="image/png" href="favicon.png">
@@ -107,9 +104,14 @@
    	</div> <!-- /intro-content --> 
 
    	<ul class="intro-social">        
-         <li><a href="https://www.facebook.com/profile.php?id=100001405774423"><i class="fa fa-facebook"></i></a></li>
-         <li><a href="https://twitter.com/JamesDouble_Kuo"><i class="fa fa-twitter"></i></a></li>
-         <li><a href="https://www.instagram.com/james840701/"><i class="fa fa-instagram"></i></a></li>
+         <li><a href="https://www.facebook.com/profile.php?id=100001405774423" target="_blank"><i class="fa fa-facebook"></i></a></li>
+         <li><a href="https://twitter.com/JamesDouble_Kuo" target="_blank"><i class="fa fa-twitter"></i></a></li>
+         <li><a href="https://www.instagram.com/james840701/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+         <li><a href="https://www.linkedin.com/in/james-kuo-41b254128/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+         <li><a href=""><i class="fa fa-weibo" aria-hidden="true"></i></a></li>
+
+         <li><a data-toggle="popover" title="微信QRCode"  data-placement="right" data-img="images/qrcode.JPG" ><i class="fa fa-weixin" aria-hidden="true"></i></a></li>
+
       </ul> <!-- /intro-social -->      	
 
    </section> <!-- /intro -->
