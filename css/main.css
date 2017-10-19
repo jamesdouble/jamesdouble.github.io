@@ -95,6 +95,15 @@ a:hover, a:focus, a:active {
 	outline: 0;
 }
 
+a.whitelink {
+	color: #FFFFFF;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
 /** 
  * ===================================================================
  * 03. typography & general theme styles - (_document-setup.scss)

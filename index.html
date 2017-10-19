@@ -23,25 +23,20 @@
    <link rel="stylesheet" href="css/main.css">
    <link rel="stylesheet" href="css/vendor.css">     
    <!-- script
-   ================================================== -->   
+   ================================================== --> 
+   <!-- count GitHub State Before -->
+   <script src="js/gh3.js"></script>
+   <script src="js/vendors/underscore-min.js"></script>
+   <script src="js/getGitHubState.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+	<script src="js/popupInfo.js"></script>
 	<script src="js/modernizr.js"></script>
 	<script src="js/pace.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-	<script>
-	var $j = jQuery.noConflict();
-
-	$j(document).ready(function() {
-		$j('[data-toggle="popover"]').popover({
-			html: true,
-			//content: function(){return '<img src="'+$(this).data('img') + '" />';}
-			content: function(){return '<img src="images/qrcode.JPG" />';}
-		});
-	});
-	</script>
-
 	<script type="text/javascript" src="js/slider.js"></script>
+
+
    <!-- favicons
 	================================================== -->
 	<link rel="icon" type="image/png" href="favicon.png">
@@ -97,7 +92,7 @@
 
 	   			<a class="button stroke smoothscroll" href="#about" title="">更多关于我</a>
 	   			<a class="button stroke" href="index_zh.html#about" title="">更多關於我</a>
-	   			<a class="button stroke" href="#about" title="">More About Me</a>
+	   			<a class="button stroke" href="#about" title="">English Ver.</a>
 	   		</div>  
    			
    		</div>   		 		
@@ -111,6 +106,8 @@
          <li><a href=""><i class="fa fa-weibo" aria-hidden="true"></i></a></li>
 
          <li><a data-toggle="popover" title="微信QRCode"  data-placement="right"><i class="fa fa-weixin" aria-hidden="true"></i></a></li>
+         <li><a data-toggle="qqpopover" title="QQ - QRCode"  data-placement="right"><i class="fa fa-qq" aria-hidden="true"></i></i></a></li>
+         
 
       </ul> <!-- /intro-social -->      	
 
@@ -207,8 +204,8 @@
 
    	<div class="row button-section">
    		<div class="col-twelve">
-   			<a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a>
-   			<a href="#" title="Download CV" class="button button-primary">Download CV</a>
+   			<a href="#resume" title="經歷" class="button stroke smoothscroll">经历</a>
+   			<a href="#portfolio" title="附錄" class="button button-primary smoothscroll">附录</a>
    		</div>   		
    	</div>
 
@@ -249,7 +246,7 @@
 	   				</div>
 
 	   				<div class="timeline-header">
-	   					<h3>SOHO IOS Developer</h3>
+	   					<h3>Freelancer - IOS Developer</h3>
 	   					<p>四月 2017 - 现在</p>
 	   				</div>
 
@@ -730,34 +727,35 @@
 	</section> <!-- /portfolio --> 
 
 
-	<!-- CTA Section
+	<!-- services Section
    ================================================== -->
-	<section id="cta" class="grey-section">
+	<section id="services">
 
-   	<div class="row cta-content">
+		<div class="overlay"></div>
 
-   		<div class="col-twelve section-ads">  
+		<div class="row section-intro">
+   		<div class="col-twelve">
+   			<h5>認識互聯網上的我</h5>
+   			<h1>JamesDouble</h1>
+   			<p class="lead">
+   			<a class="whitelink" href="https://github.com/jamesdouble">https://github.com/jamesdouble</a></br>
+			Github上會放一些我『靈機一動』寫的有趣IOS小元件</br>
+			<a class="whitelink" href="http://www.jianshu.com/u/cb7d12bc29fe ">http://www.jianshu.com/u/cb7d12bc29fe </a></br>
+			博客內容主要寫我在專案上碰到的問題探討，或是做元件的一些教學文。</p>
+   		</div>   		
+   	</div> <!-- /section-intro -->
 
-	     		<h2 class="h01">认识互联网上的我 - JamesDouble</h2>
-		      <p class="lead">
-		      	Github:<a href="https://github.com/jamesdouble">https://github.com/jamesdouble</a><br>
-				Github上会放一些我『灵机一动』写的有趣IOS小元件<br>
-		      	技术博客:<br>
-		      	<a href="http://www.jianshu.com/u/cb7d12bc29fe">http://www.jianshu.com/u/cb7d12bc29fe</a> <br>
-		      	博客内容主要写我在专案上碰到的问题探讨，或是做元件的一些教学文。
-				</p>
-
-   		</div>
-
-   	</div> <!-- /cta-content -->
-
-   </section> <!-- /cta --> 
+   		
+   	</div> <!-- /services-content -->
+		
+	</section> <!-- /services -->
 
 	
    <!-- stats Section
    ================================================== -->
 	<section id="stats" class="count-up">
-
+		<h3 style="color: white" > 實時更新 GitHub數據<br></h3>
+		<h3 style="color: white" > <br></h3>
 		<div class="row">
 			<div class="col-twelve">
 
@@ -774,7 +772,7 @@
 						</h3>
 
 						<h5 class="stat-title">
-							IOS开源项目
+							IOS OpenSource 項目
 						</h5>
 
 					</div> <!-- /stat -->					
@@ -790,7 +788,7 @@
 						</h3>
 
 						<h5 class="stat-title">
-							Fork 数
+							Fork Count
 						</h5>
 
 					</div> <!-- /stat -->
@@ -801,7 +799,7 @@
 							<i class="icon-badge"></i>
 						</div>
 
-						<h3 class="stat-count">
+						<h3 class="stat-count" id="starscountid">
 							200
 						</h3>
 
